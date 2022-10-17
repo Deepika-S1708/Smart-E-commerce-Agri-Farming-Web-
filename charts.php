@@ -1,0 +1,202 @@
+<?php
+    session_start();
+
+ 
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Rj@1501" >
+
+  <title>Dashboard</title>
+<link rel="stylesheet" href="css.css">
+
+<link rel="stylesheet" href="css/custom.css">
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">PariVartan</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.php"> 
+        <b> <i class="fas fa-users-cog"></i></b>
+          <span>Profile</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+   <!-- <div class="sidebar-heading">
+       Find Jobs on Filtering
+      </div> -->
+
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+       <li class="nav-item">
+        <a class="nav-link" href="charts.php">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Orders</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <!-- <div class="sidebar-heading">
+        Graduation
+      </div> -->
+
+   
+
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="upload.php">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Insert Stock</span></a>
+      </li>
+      
+      <hr class="sidebar-divider">
+
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="404.php">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Update Stock</span></a>
+      </li> <hr class="sidebar-divider d-none d-md-block">
+      
+		<li class="nav-item">
+        <a class="nav-link" href="blank.php">
+          <i class="fas fa-archway"></i>
+          <span>Reports</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+ <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.php">
+         <i class="fas fa-suitcase-rolling"></i>
+          <span>Analysis</span></a>
+      </li>
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+
+<section id="jobs">
+  <div class="container">
+    <center><?php       
+   if(isset($_SESSION['user']))
+    {
+        echo ' WELCOME ' . $_SESSION['user'].'';
+        echo '<a href="logout.php?logout">                <i class="fas fa-sign-out-alt"></i>        LOG OUT</a>';
+    }
+    else
+    {
+        header("location:login.php");
+    }
+?></center> <br>
+    
+
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product code</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Units</th>
+      <th scope="col">Price</th>
+      <th scope="col">Date</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Red Mirchi </td>
+      <td> Mirchi</td>
+      <td>1</td>
+      <td>5000</td>
+      
+      <td>2020-05-23 10:37:58</td>
+      <td>sjobs@apple.com</td>
+      
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Peanut</td>
+      <td>PeaNut - B</td>
+      <td>3</td>
+      <td>9000</td>
+      <td>2020-05-23 19:12:54</td>
+      <td>raj123@gmail.com</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Wheat</td>
+      <td>Wheat_Long</td>
+      <td>2</td>
+      <td>4000</td>
+      <td>2020-05-22 17:30:32</td>
+      <td>deepika123@gmail.com</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</section >
+</div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

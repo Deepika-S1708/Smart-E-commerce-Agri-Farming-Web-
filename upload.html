@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<title>Upload PDF</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>Upload file</h1>
+  </body>
+  <?php
+  $dbh=new PDO("mysql:host=localhost; dbname=job","root","");
+  if(isset($_POST['btn']))
+  {
+    $name=$_FILES['myfiel']['name'];
+    $data=file_get_contents($_FILES['myfile']['tmp_name']);
+    $stmt=$dbh->prepare("insert into upload values(?,?)");
+    $stmt->bindParam(1,$name);
+     $stmt->bindParam(2,$data);
+     $stmt->execute();
+  }
+?>
+<form method="POST" action="" enctype="multipart/form-data">
+    <input type="file" name="myfile"/>
+    <button name="btn">Upload</button>
+</form>
+
+
+
+</body>
+</html> 

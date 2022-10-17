@@ -1,0 +1,324 @@
+*{
+	margin:0;
+
+padding:0;
+}
+.wrapper
+{
+	width:1170px;
+	margin:auto;
+}
+header
+{
+	background:linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url("job3.jpg");
+	height: 100vh;
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area
+{
+	 float: right;
+	 list-style: none;
+	 margin-top: 30px;
+
+}
+
+
+.nav-area li
+{
+	display: inline-block;
+}
+.nav-area .fa{
+	color:#7ce08a;
+	size:15px;
+	margin-right: 6px;
+	margin-top: 1px;
+
+
+ 
+  
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+ 
+}
+.logo .fa
+{
+color:#7ce08a;
+	
+ 
+ 
+  font-size: 30px;
+  width: 20px;
+  
+ size:20px;
+}
+
+
+.nav-area li {
+	color:#fff;
+
+	text-decoration:none;
+	padding: 10px 15px;
+	font-family: poppins;
+	font-size: 14px;  
+}
+.nav-area li a:hover{
+	background: linear-gradient(to right,purple,red);
+	color: white;
+}
+
+.welcome-text{
+	position: absolute;
+	width:600px;
+	height:300px;
+	margin: 20% 30%;
+	text-align:center;
+
+}
+.welcome-text h1{
+	text-align: center;
+	color:WHITE;
+	font-size:30px; 
+}
+.welcome-text a{
+	border:1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top:20px;
+	display: inline-block;
+	color: #fff; 
+}
+.welcome-text a:hover{
+	background:linear-gradient(to right,purple,red);
+	color:white; 
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.search-job
+{
+	padding:30px 0;
+	margin:10px 2% 5px;
+	background:linear-gradient(to right,#6db9ef,#7ce08a);
+}
+.search-job .form-control
+{
+	max-width: 300px;
+	display:inline-flex;
+	margin: 10px 8px;
+	border-radius:0;
+	box-shadow: none !important;
+	border:none !important;
+}
+input[type=submit] {
+  background:linear-gradient(to right,red,purple) ;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  text-decoration: none;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+#recruiters
+{
+	padding-top: 2px;
+	padding-bottom: 50px;
+
+}
+#recruiters h3
+{
+	text-align:center;
+	padding-bottom: 40px;
+}
+h3::before
+{
+	content:'';
+	background:linear-gradient(to right,#6db9ef,#7ce08a);
+	width:50px;
+	height:30px;
+	position: absolute;
+	z-index:-13;
+margin-top:-17px;
+border-top-left-radius: 70px;
+border-bottom-right-radius: 90px;
+
+}
+#recruiters img
+{
+	max-width: 100px;
+	margin: 10px 20px;
+
+}
+#jobs
+{
+	background: #f8f8fa;
+	padding :30px 0;
+
+}
+.company-details
+{
+	box-shadow: 0 2px 70px 0 rgba(110,130,208, .18);
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.job-updates
+{
+	background:#fff;
+	padding: 10px 10px;
+	border-radius: 5px;
+}
+.job-updates .fa
+{
+	margin-right: 10px;
+	margin-top: 5px;
+	color:#77d1b1;
+}
+.job-updates small
+{
+	background-color: #efefef;
+	padding:1px 5px;
+	margin:0 5px;
+}
+.apply-btn
+{
+	height:40px;
+	background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+	padding:7px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.apply-btn .btn-primary
+{
+	padding:0px 30px;
+	float: right;
+	
+	border-radius:0;
+	box-shadow: none !important;
+	background: linear-gradient(to right,purple,red);
+	border:1px solid #fff;
+
+}
+.page-link li
+{
+	height: 25px;
+	width:25px;
+	list-style: none;
+	display: inline-block;
+	cursor: pointer;
+}
+.page-link li:hover, .active
+{
+color:#fff;
+background:linear-gradient(to right,purple,red); 
+}
+#site-stats
+{
+padding:50px 0;
+	
+}
+#site-stats h3
+
+{
+ margin-bottom: 30px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+.nav-area li:nth-child(2) a
+{
+	border:1px solid #fff;
+border-radius: 5px;
+padding:17px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.stats-box .fa
+{
+	font-size:30px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.page-footer
+
+{
+
+	background:linear-gradient(to right,#6db9ef,#7ce08a);
+	color:black;
+}
+.stats-box .fa
+{
+	margin-right: 10px;
+	margin-top: 5px;
+	color:#77d1b1;
+}
+.social .fa
+{
+		color:purple;
+	
+ 
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+ size:20px;
+}
+.social .fa:hover {
+    opacity: 0.7;
+}
+
